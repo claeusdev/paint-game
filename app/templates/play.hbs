@@ -6,12 +6,16 @@
         </div>
     </div>
     <div class="flex-1 flex">
-        <div class="flex-1 border-r-2 border-gray-dark border-dashed p-4">
-            Grid
+        <div class="flex-1 border-r-2 p-4">
+            <div class="p-16">
+                Game: {{game.templatePicture.cells.length}}
+                <PictureGrid @picture={{game.templatePicture}} />
+            </div> 
         </div>
-        <div class="flex-1 p4">
-
-            Grid
+        <div class="flex-1 p-4">
+            <div class="p-8">
+                <PictureGrid @picture={{game.playerPicture}}/>
+            </div>
         </div>
     </div>
 </div>
