@@ -1,7 +1,20 @@
 
 {{outlet}}
-
-<div class="pin-b fixed bg-black p-2">
+<div class="container text-center mx-auto p-16">
+    <h1 class="text-center text-indigo">Welcome to paint-a-pic</h1>
+    <p class="text-center">Paint a picture to match the generated picture.</p>
+    <h3 class="p-8">How to play</h3>
+    <ul class="list-decimal">
+        <li >Select a color at using the color picker at the top right</li>
+        <li >Click on a cell on the board and start drawing</li>
+        <li >Match the pattern on the left with your color skills till it matches exactly the pattern on your left.</li>
+        <li >Press "new game" to generate a new pattern( there are only 3 for now) </li>
+    </ul>
+</div>
+<div class="pin-b fixed bg-black p-5">
     {{link-to "Play" "play" classNames="text-white"}}
     {{link-to "Design" "design" classNames="text-white"}}
+</div><div class="pin-b fixed bg-black p-5">
+    {{link-to "Play" "play" classNames="text-white"}}
+    {{!-- {{link-to "Design" "design" classNames="text-white"}} --}}
 </div>
